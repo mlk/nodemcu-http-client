@@ -3,9 +3,9 @@ local simplewificonfig = {}
 simplewificonfig.connected = false
 
 function simplewificonfig.setupWifiMode(action)
-    if simplewificonfig.connected  then
-        action();
-        return;
+    if wifi.sta.getip() ~= nil  then
+        action(wifi.sta.getip())
+        return
     end
     
     local json = require "cjson"
@@ -14,7 +14,6 @@ function simplewificonfig.setupWifiMode(action)
     local settings = json.decode(theSettings)
     file.close()
     
-    print("set up wifi mode")
     wifi.setmode(wifi.STATION)
     wifi.sta.config(settings.sid,settings.password)
     
@@ -26,6 +25,6 @@ function simplewificonfig.setupWifiMode(action)
             action(wifi.sta.getip())
         end
     end) 
-end    
+end     
 
 return simplewificonfig 
