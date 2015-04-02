@@ -54,7 +54,6 @@ function espUnit.runTests(testSet)
                     print(assertHelper.key .. ": PASSED")
                 end
             end
-            
             if assertHelper.nextTest ~= nil then
                 assertHelper.nextTest.runTest()
             end
