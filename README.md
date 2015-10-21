@@ -20,7 +20,7 @@ local http = require 'http'
 
 This software is under an MIT-style license. This means you can do as you wish with it, but you should do me the courtesy of including the LICENSE file, for opensource software I'm happy for you to simply adding the lines
 ```
-# Based on https://github.com/mlk/nodemcu-http-client
-# License: https://github.com/mlk/nodemcu-http-client/blob/master/LICENSE
+-- Based on https://github.com/mlk/nodemcu-http-client
+-- License: https://github.com/mlk/nodemcu-http-client/blob/master/LICENSE
 ```
 at the top of the http.lua file. 
