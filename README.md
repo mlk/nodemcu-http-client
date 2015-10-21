@@ -8,10 +8,10 @@ This currently supports enough of HTTP 1.0 for it to be able to interact with we
 ```
 local http = require 'http'
 
-    http.postContent("http://example.com/example-post", "{\"content\": true}", "application/json", function(data) 
-        print("Returned Status: " .. data.status)
-        print("Returned Content " .. data.content)
-    end)
+http.postContent("http://example.com/example-post", "{\"content\": true}", "application/json", function(data) 
+    print("Returned Status: " .. data.status)
+    print("Returned Content " .. data.content)
+end)
 
 
 ```
