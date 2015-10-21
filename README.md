@@ -18,7 +18,7 @@ local http = require 'http'
 
 # LICENSE
 
-This software is under an MIT-style license. This means you can do as you wish with it, but you should do me the courtesy of including the LICENSE file, for opensource software I'm happy for you to simply adding the lines
+This software is under an MIT-style license. This means you can do as you wish with it, but you should including the LICENSE file, for opensource software I'm happy for you to simply adding the lines
 ```
 -- Based on https://github.com/mlk/nodemcu-http-client
 -- License: https://github.com/mlk/nodemcu-http-client/blob/master/LICENSE
